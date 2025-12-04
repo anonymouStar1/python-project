@@ -174,41 +174,7 @@ def execution():
                 givetime=(random.choice(DayGreetings),clock(),"sir")
                 print(givetime)
                 speak(givetime)
-            
-            elif "how are you" in query or "whats up"in query:
-                results=random.choice(Greetingsreply),"what about you"
-                speak(results)
-                
-            elif "i am fine"in query or "all good"in query:
-                speak(random.choice(Greetingsthird))
-                speak(random.choice(Greetingscontinue))
-                
-                
-            elif"okay" in query or "continue" in query:
-                speak(random.choice(GreetingsSecond))
-            elif"not fine" in query or "i am not fine"in query or "sick"in query or "not fine"in query:
-                speak(random.choice(Greetingsforill))
-                
-            elif "lets get back to work"in query or "let it be"in query:
-                speak("okay sir as u wiss")
-                
-            elif "i had accident" in query and "i got accident" in query:
-                speak("is everything fine sir")
-                
-               
-            elif "every thing is fine"in query or "i am fine"in query or"no need to worry"in query:
-                speak("did you consult to doctor")
-                
-            elif"i talked with doctor"in query or"yah i talked with doctor" in query or "i talked to doctor"in query or "consulted with doctor"in query:
-                speak("what did doctor said")
-            elif "he said i am fine" in query or"doctor said no need to worry"in query:
-                speak("sounds good sir")
-                speak("well lets continue to our work sir")
-            elif "what should i do" in query or "what can i do"in query:
-                speak("sorry sir my response are limited")
-            elif "you"in query and "understand"in query:
-                speak("while im working on it sir")
-            
+        
 
             elif "browse" in query:
                 query=query.replace("browse ","")
@@ -443,4 +409,5 @@ if __name__ == "__main__":
            speak("it was great working with you")
            sys.exit()
             
+
         
